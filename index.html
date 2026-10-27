@@ -3,60 +3,295 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Renan App</title>
+
+<title>Renan Melo | App Profissional</title>
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#0F172A">
 
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    background:#0f172a;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#0b1120;
     color:white;
-    font-family:Arial;
+}
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1d4ed8);
+    padding:60px 20px;
     text-align:center;
-    padding:50px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    opacity:.9;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:30px 20px;
 }
 
 .card{
     background:#1e293b;
-    max-width:600px;
-    margin:auto;
-    padding:30px;
+    padding:25px;
     border-radius:20px;
+    margin-bottom:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.card h2{
+    color:#60a5fa;
+    margin-bottom:15px;
 }
 
 .btn{
     display:inline-block;
-    margin:10px;
     padding:12px 20px;
-    background:#2563eb;
-    color:white;
+    margin:5px;
+    border-radius:12px;
     text-decoration:none;
-    border-radius:10px;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
 }
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.linkedin{
+    background:#0A66C2;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.cv{
+    background:#475569;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:#334155;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.timeline{
+    border-left:3px solid #3b82f6;
+    padding-left:20px;
+}
+
+.timeline-item{
+    margin-bottom:20px;
+}
+
+.timeline-item h3{
+    color:#93c5fd;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+}
+
+.install-btn{
+    background:#2563eb;
+    display:none;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="card">
+<header>
 
 <h1>Renan Melo</h1>
 
 <p>
-Procurement Analyst | LG Electronics Brasil
+Procurement Analyst | Supplier Development | Asset Management
 </p>
 
-<a class="btn"
+<br>
+
+<a class="btn linkedin"
 href="https://www.linkedin.com/in/renanmelow37/"
 target="_blank">
 LinkedIn
 </a>
 
-<a class="btn"
+<a class="btn whatsapp"
 href="https://wa.me/5592984685985"
 target="_blank">
 WhatsApp
 </a>
 
+<a class="btn cv"
+href="curriculo.pdf"
+target="_blank">
+Baixar Currículo
+</a>
+
+<button id="installBtn" class="btn install-btn">
+Instalar App
+</button>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>👨‍💼 Sobre Mim</h2>
+
+<p>
+Profissional com experiência em Procurement, Strategic Sourcing,
+Supply Chain, Desenvolvimento de Fornecedores e Gestão de Ativos.
+Atualmente atuo na LG Electronics Brasil conduzindo negociações,
+follow-up de pedidos, homologação de fornecedores, redução de custos
+e iniciativas voltadas à melhoria contínua dos processos.
+</p>
+
 </div>
+
+<div class="card">
+
+<h2>💼 Experiência Profissional</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>LG Electronics Brasil</h3>
+<p>Procurement Analyst</p>
+</div>
+
+<div class="timeline-item">
+<h3>Supplier Development</h3>
+<p>Desenvolvimento e qualificação de fornecedores.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Asset Management</h3>
+<p>Gestão de ativos corporativos, inventário e controle patrimonial.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Competências</h2>
+
+<div class="grid">
+
+<div class="skill">Procurement</div>
+
+<div class="skill">Strategic Sourcing</div>
+
+<div class="skill">Supplier Development</div>
+
+<div class="skill">Supply Chain</div>
+
+<div class="skill">Asset Management</div>
+
+<div class="skill">Negotiation</div>
+
+<div class="skill">Project Management</div>
+
+<div class="skill">Cost Reduction</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>🎓 Formação & Certificações</h2>
+
+<ul>
+<li>Adicionar graduação aqui</li>
+<li>Adicionar MBA aqui</li>
+<li>Adicionar certificações aqui</li>
+<li>Adicionar cursos relevantes aqui</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📞 Contato</h2>
+
+<p><strong>LinkedIn:</strong></p>
+<p>
+<a style="color:#60a5fa"
+href="https://www.linkedin.com/in/renanmelow37/"
+target="_blank">
+linkedin.com/in/renanmelow37
+</a>
+</p>
+
+<br>
+
+<p><strong>WhatsApp:</strong></p>
+<p>
+<a style="color:#60a5fa"
+href="https://wa.me/5592984685985"
+target="_blank">
++55 92 98468-5985
+</a>
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Renan Melo
+
+</footer>
+
+<script>
+
+let deferredPrompt;
+
+window.addEventListener(';
+
+deferredPrompt = null;
+
+});
+
+});
+
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('service-worker.js');
+}
+
+</script>
 
 </body>
 </html>
